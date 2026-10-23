@@ -36,14 +36,14 @@ const lines = [];
 function hostOk() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "GoldHEN v2.4b18.12 Loaded ...";
+        m.innerHTML = "تم التفعيل بنجاح ✔";
     }
 }
 
 function hostFail() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "Failed to Load! Restart Your Console ...";
+        m.innerHTML = "فشل التفعيل أعد تشغيل جهازك";
         m.style.color = "yellow";
     }
 }
@@ -676,7 +676,7 @@ function makeRpc(worker) {
                 mark("ALREADY-ROOT", "getuid=" + uid0 + " setuid(0)=" + su0);
                 var m = document.getElementById("msgs");
                 if (m) {
-                    m.innerHTML = "GoldHEN is Already Loaded ...";
+                    m.innerHTML = "جهازك مفعل  سابقا";
                 }
                 return;
             }

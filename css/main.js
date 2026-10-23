@@ -53,7 +53,7 @@ async function doJb() {
     }
 
     if (fn.setuid.invoke(0) !== -1) {
-      msgs.innerHTML = "جهازك مفعل  سابقا ...";
+      msgs.innerHTML = "جهازك مفعل  سابقا";
       return;
     }
 
@@ -111,10 +111,10 @@ async function doJb() {
       load_bin(bin_u8);
     }
 
-    msgs.innerHTML = "تم التفعيل بنجاح ✔ ...";
+    msgs.innerHTML = "تم التفعيل بنجاح";
     logger.info("===END===");
   } catch (e) {
-    msgs.innerHTML = "فشل التفعيل أعد تشغيل جهازك ...";
+    msgs.innerHTML = "فشل التفعيل أعد تشغيل جهازك";
     msgs.style.color = "yellow";
   }
 }
